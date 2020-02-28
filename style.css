@@ -34,9 +34,8 @@ header{
     text-decoration: none;
     clear: right;
      color: grey;
-     margin: 0 10px;
      line-height: 78px;
-     padding: 20px 0px;
+     padding: 20px 10px;
 }
 label{
     margin: 0 40px 0 0;
@@ -59,26 +58,107 @@ label{
 
 }
 .icons i:hover{
-    color: turquoise;
+    color: #0074FF;
     transform: scale(1.2);
 }
 #menu:hover{
-    border-bottom: 3px solid turquoise;
+    border-bottom: 3px solid #0074FF;
 }
 
-.cover{
+.first{
+    background-image: url('cover.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 15%;
+    padding-bottom: 15%;
 }
+.first a{
+    text-decoration: none;
+    color: white;
+    background-color: #0074FF;
+    padding: 10px 20px;
+}
+.first a:hover{
+    opacity: 0.6;
+}
+.second{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    font-size: 0.8rem;
+}
+.second h4, h5{
+    padding: 0;
+    margin: 0;
+}
+.second h4{
+    padding-top: 10px;
+}
+.second h5{
+    padding-bottom: 10px;
+}
+.categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+.categories div{
+    text-align: center;  
+}
+.categories img{
+    width: 100%;
+}
+.categories h5{
+    color: silver;
+}
+.item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    background-color: #0074FF;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  .item:hover img{
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .item:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .text {
+    color: white;
+    background-color: #0074FF;
+    font-size: 0.7rem;
+    padding: 16px 32px;
+  }
+  @media only screen and (max-width: 1200px){
+    .categories{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
 
+  }
 
-
-
-
-
-
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 850px){
     body{
         margin: 0;
         padding: 0;
@@ -89,9 +169,9 @@ label{
     .nav{
         padding: 0px;
         flex: 100%;
+        z-index: 1;
     }
     header{
-        border-bottom: 1px solid turquoise;
         background-color: white;
     }
     label{
@@ -106,7 +186,7 @@ label{
         display: none;
     }
     label i:hover{
-        color: turquoise;
+        color: #0074FF;
     }
     .icons{
         display: none;
@@ -115,14 +195,35 @@ label{
         display: block;
         margin: 0;
         width: 100%;
-        padding: 10px;
-        border: 1px solid turquoise;
+        padding: 5px 5px;
+        border: 1px solid white;
+        background-color:  #0074FF;
+        color: white;
     }
     .menu a:hover{
-        background-color: rgb(245, 251, 253);
-
+        background-color: rgb(118, 178, 252);
     }
     #toggle:checked + .menu{
         display: block;
+    }
+    .first {
+        font-size: 0.65rem;
+    }
+    .second{
+        font-size: 0.65rem;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .categories{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
     }
 }
