@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+   
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+}
+.logo{
+    float: left;
+    flex: 20%;
+    text-align: right;
+    height: 70px;
+}
+.logo img{
+    width: 50%;
+    height: auto;
+}
+.nav{
+    flex: 60%;
+    float: right;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+.menu a{
+    text-decoration: none;
+    clear: right;
+     color: grey;
+     margin: 0 10px;
+     line-height: 78px;
+     padding: 20px 0px;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    display: none;
+    line-height: 70px;
+}
+#toggle{
+    display: none;
+}
+.icons{
+    flex:20%;
+    height: 70px;
+}
+.icons i{
+    padding-left: 10px;
+    padding-right: 15px;
+    color: grey;
+    padding-top: 25px;
+
+}
+.icons i:hover{
+    color: turquoise;
+    transform: scale(1.2);
+}
+#menu:hover{
+    border-bottom: 3px solid turquoise;
+}
+
+.cover{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        display: none;
+    }
+    .nav{
+        padding: 0px;
+        flex: 100%;
+    }
+    header{
+        border-bottom: 1px solid turquoise;
+        background-color: white;
+    }
+    label{
+        color: grey;
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+    }
+    .menu{
+        text-align: center;
+        display: none;
+    }
+    label i:hover{
+        color: turquoise;
+    }
+    .icons{
+        display: none;
+    }
+    .menu a{
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid turquoise;
+    }
+    .menu a:hover{
+        background-color: rgb(245, 251, 253);
+
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }
+}
