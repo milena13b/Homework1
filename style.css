@@ -142,6 +142,7 @@ label{
     transition: .5s ease;
     background: rgb(7, 42, 84);
     backface-visibility: hidden;
+    background-color: rgb(243, 242, 242);
 }
 .middle {
     transition: .5s ease;
