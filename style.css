@@ -99,10 +99,24 @@ label{
     margin: 0;
 }
 .second h4{
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 .second h5{
     padding-bottom: 10px;
+}
+.featured{
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+.featured i{
+    padding-top: 1rem;
+    padding-left: 0.7rem;
+    font-size: 1rem;
+}
+.featured i:hover{
+    color: #0074FF;
+    cursor: pointer;
+    transform: scale(1.2);
 }
 .categories{
     display: grid;
@@ -260,10 +274,12 @@ label{
     padding: 30px 10px;
     float: left;
     text-align: right;
+    font-size: 1.2rem;
 }
 .fourth i:hover{
     color: #0074FF;
     cursor: pointer;
+    transform: scale(1.2);
 }
 .new {
     display: grid;
@@ -348,16 +364,22 @@ label{
     padding: 0px 10px;
     float: left;
     text-align: right;
+    font-size: 1.2rem;
 }
 .title i:hover{
     color: #0074FF;
-    cursor: pointer;
+    cursor: pointer; 
+    transform: scale(1.2);
 }
 .posts{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     padding-bottom: 20px;
+}
+.posts div:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 .posts img{
     width: 100%;
@@ -399,12 +421,18 @@ label{
 .brands i:hover{
     color: #0074FF;
     cursor: pointer;
+    transform: scale(1.2);
 }
 .brand-icons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 12%;
     padding-bottom: 50px;
+}
+.brand-icons img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    box-shadow: 0.5rem 0 0.5rem rgb(216, 214, 214);
 }
 .subscribe{
     width: 100%;
@@ -436,8 +464,51 @@ label{
 #submit:hover{
     opacity: 0.6;
 }
+.footer{
+    padding-top: 5%;
+    width: 100%;
+    background-color: rgb(6, 6, 64) ;
+    text-align: left;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2rem;
+}
+.metafooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
 
- 
+.footer h4{
+    color: white;
+}
+.footer p{
+     color: grey;
+     font-size: 0.8rem;
+}
+.footer i{
+    padding-right: 20px;
+}
+.footer span{
+    color:  #0074FF;
+}
+.metafooter{
+    border-top: 1px solid grey;
+}
+.metafooter img{
+    padding-top: 1rem;
+}
+.metafooter i:hover{
+    color: white;
+}
+
 
   @media only screen and (max-width: 1200px){
     .categories{
