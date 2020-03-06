@@ -1,0 +1,497 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+   
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+}
+.logo{
+    float: left;
+    flex: 20%;
+    text-align: right;
+    height: 70px;
+}
+.logo img{
+    width: 50%;
+    height: auto;
+}
+.nav{
+    flex: 60%;
+    float: right;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+.menu a{
+    text-decoration: none;
+    clear: right;
+     color: grey;
+     line-height: 78px;
+     padding: 20px 10px;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    display: none;
+    line-height: 70px;
+}
+#toggle{
+    display: none;
+}
+.icons{
+    flex:20%;
+    height: 70px;
+}
+.icons i{
+    padding-left: 10px;
+    padding-right: 15px;
+    color: grey;
+    padding-top: 25px;
+
+}
+.icons i:hover{
+    color: #0074FF;
+    transform: scale(1.2);
+}
+#menu:hover{
+    border-bottom: 3px solid #0074FF;
+}
+.footer{
+    padding-top: 5%;
+    width: 100%;
+    background-color: rgb(6, 6, 64) ;
+    text-align: left;
+}
+.row11{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2rem;
+}
+.metafooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.footer h4{
+    color: white;
+}
+.footer p{
+     color: grey;
+     font-size: 0.8rem;
+}
+.footer i{
+    padding-right: 20px;
+}
+.footer span{
+    color:  #0074FF;
+}
+.metafooter{
+    border-top: 1px solid grey;
+}
+.metafooter img{
+    padding-top: 1rem;
+}
+.metafooter i:hover{
+    color: white;
+}
+ 
+
+
+#data{
+    display: inline-block;
+}
+#soc:hover{
+    opacity: 30%;
+}
+
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row1{
+    width: 100%;
+    column-count: 2;
+    display: table;
+    margin-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.row2{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    column-count: 2;
+    display: grid;
+    grid-template-columns: 40% 57%;
+    padding-left: 5%;
+    padding-right: 5%;
+    column-gap: 3rem;
+}
+
+label{
+    margin:  0 40px 0 0;
+    font-size: 26p;
+    line-height: 70px;
+    display: none;
+}
+ul li{
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-emphasis: bold;
+    color: rgb(74, 73, 73);
+}
+#info{
+    text-shadow: 5px 5px 5px  rgb(199, 191, 191);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-left: 3rem;
+    color: rgb(7, 34, 68);
+   padding-bottom: 1rem;  
+}
+.zero{
+   border: 1px solid rgb(7, 34, 68);
+   background-color: rgb(7, 34, 68);
+   box-shadow: 15px 15px 15px grey;
+   text-align: right;
+   width: 100%;
+   float: right;
+   font-size: 20px;
+   color: white;
+   padding-right: 60px;
+   margin-top: 100px;
+}
+.first{
+    border: solid transparent;
+}
+.second{
+    background-color: white;
+    box-shadow: 10px 10px 10px grey;
+    width: 30%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-bottom: 3px;
+    float: left;
+    box-sizing: inherit;
+    margin-top: -250px;
+}
+#data{
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+}
+#third{
+    background-color: white;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 10px grey;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#ed{
+    text-shadow: 5px 5px 5px  rgb(199, 191, 191);
+    padding-left: -40px ;
+    margin-bottom: 20px;
+    color: rgb(7, 34, 68);
+    position: relative;
+}
+#lasth{
+    color: white;
+    text-align: center;
+}
+#last{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-align: center;
+    background-color: rgb(7, 34, 68);
+    height: 120px;
+    padding-top: 10px;
+    margin: unset;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+}
+    
+    #image{
+       max-width: 100%;
+       width: 100%;
+       height: 22rem;
+       display: block;
+    }
+#about{
+    padding-top: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 4rem;
+    text-align: justify;
+    float: right;
+    width: 64%;
+    color: grey;
+    border: 1px solid grey;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    box-sizing: inherit; 
+    margin-top: 70px;
+}
+#lan{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px gray;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+ tr,td{
+  border-spacing: 0;
+    border: 2px solid grey;
+    row-gap: 1;
+    width: 280px;
+    height: 50px;
+    color: grey;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+table{
+    border-color: transparent;
+}
+.prog{
+    column-count: 2;
+    margin-bottom: 6rem;
+    padding-bottom: 30px;
+    width: 90%;
+    border: 1px solid grey;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 5px;
+    margin-left: 5rem;
+    background-color: white;
+    }
+  #skill{
+      text-align: center;
+      color: rgb(7, 34, 68);
+      text-shadow: 5px 5px 5px  rgb(199, 191, 191);
+      margin-bottom: 5px;
+  }
+   p{
+       font-size: 22px;
+       color: rgb(111, 111, 111);
+       font-family: 'Times New Roman', Times, serif;
+   }
+    .colona1{
+        box-sizing: inherit;
+        width: 50%;
+        float:left;
+        text-align: right;
+    }
+    .colona2{
+        text-align: left;
+        box-sizing: inherit;
+        width: 50%;
+        float: right;
+    }
+    .prog::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    @media screen and (max-width: 800px){
+        .colona1,
+        .colona2 {
+            width: 100%;
+            overflow: hidden;
+            float: right
+        }
+    label{
+            display: block;
+            cursor: pointer;
+        }
+        #lan{
+            width: 100%;
+        }
+        #rmenu{
+           text-align: center;
+           width: 100%;
+           display: none;
+        }
+        #rmenu a{
+            display: inline-block;
+            border-bottom: 1px solid rgb(7, 34, 68);
+            margin: 0;
+        }
+        #checkbox{
+            display: block;
+        }
+        #checkbox:checked + #rmenu{
+            display: block;
+        }
+    .row1{
+        margin: 5px;
+    }
+    .second{
+        width: 100%;
+       margin-bottom: 45px;
+       overflow: hidden;
+    }
+    #about {
+        overflow: hidden;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding-right: 0px;
+    }
+ #image{
+     width: 100%;
+     margin-bottom: 30px;
+ }}
+    .container{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 19px;
+        color: white;
+        text-align: center;
+        margin: auto;
+       width: 90%;
+       border-radius: 5px;
+       border: 2px solid rgb(194, 191, 191);
+       background-color: rgb(194, 191, 191);
+       height: 20px;
+       float: center;
+    }
+    .c{
+        border-radius: 5px;
+        border: 1px solid rgb(7, 34, 68);
+        background-color: rgb(7, 34, 68);
+        height: 20px;
+        width: 70%;
+        float: right ;
+    }
+    .matlab{
+        border-radius: 5px;
+        border: 1px solid rgb(7, 34, 68);
+        background-color: rgb(7, 34, 68);
+        height: 20px;
+        width: 65%;
+       float: right ;
+    }
+    .vhdl{
+        border-radius: 5px;
+        border: 1px solid rgb(7, 34, 68);
+        background-color: rgb(7, 34, 68);
+        height: 20px;
+        width: 50%;
+     float: right ;
+    }
+    .maxima{
+        border-radius: 5px;
+        border: 1px solid rgb(7, 34, 68);
+        background-color: rgb(7, 34, 68);
+        height: 20px;
+        width: 55%;
+     float: right ;
+    }
+    .ltspice{
+        border-radius: 5px;
+        border: 1px solid rgb(7, 34, 68);
+        background-color: rgb(7, 34, 68);
+        height: 20px;
+        width: 60%;
+     float: left ;
+    }
+    .arduino{
+        border-radius: 5px;
+        border: 1px solid rgb(7, 34, 68);
+        background-color: rgb(7, 34, 68);
+        height: 20px;
+        width: 75%;
+     float: left ;
+    }
+    .autocad{
+        border-radius: 5px;
+        border: 1px solid rgb(7, 34, 68);
+        background-color: rgb(7, 34, 68);
+        height: 20px;
+        width: 85%;
+        float: left ;
+    }
+    .orcad{
+        border-radius: 5px;
+        border: 1px solid rgb(7, 34, 68);
+        background-color: rgb(7, 34, 68);
+        height: 20px;
+        width:  90%;
+       float: left ;
+    }
+
+@media only screen and (max-width: 850px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        display: none;
+    }
+    .nav{
+        padding: 0px;
+        flex: 100%;
+        z-index: 1;
+    }
+    .header{
+        background-color: white;
+    }
+    label{
+        color: grey;
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+    }
+    .menu{
+        text-align: center;
+        display: none;
+    }
+    label i:hover{
+        color: #0074FF;
+    }
+    .icons{
+        display: none;
+    }
+    .menu a{
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 5px 5px;
+        border: 1px solid white;
+        background-color:  #0074FF;
+        color: white;
+    }
+    .menu a:hover{
+        background-color: rgb(118, 178, 252);
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }}
+
