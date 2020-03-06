@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+   
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+}
+.logo{
+    float: left;
+    flex: 20%;
+    text-align: right;
+    height: 70px;
+}
+.logo img{
+    width: 50%;
+    height: auto;
+}
+.nav{
+    flex: 60%;
+    float: right;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+}
+.menu a{
+    text-decoration: none;
+    clear: right;
+     color: grey;
+     line-height: 78px;
+     padding: 20px 10px;
+}
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    display: none;
+    line-height: 70px;
+}
+#toggle{
+    display: none;
+}
+.icons{
+    flex:20%;
+    height: 70px;
+}
+.icons i{
+    padding-left: 10px;
+    padding-right: 15px;
+    color: grey;
+    padding-top: 25px;
+
+}
+.icons i:hover{
+    color: #0074FF;
+    transform: scale(1.2);
+}
+#menu:hover{
+    border-bottom: 3px solid #0074FF;
+}
+.footer{
+    padding-top: 5%;
+    width: 100%;
+    background-color: rgb(6, 6, 64) ;
+    text-align: left;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2rem;
+}
+.metafooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.footer h4{
+    color: white;
+}
+.footer p{
+     color: grey;
+     font-size: 0.8rem;
+}
+.footer i{
+    padding-right: 20px;
+}
+.footer span{
+    color:  #0074FF;
+}
+.metafooter{
+    border-top: 1px solid grey;
+}
+.metafooter img{
+    padding-top: 1rem;
+}
+.metafooter i:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 850px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        display: none;
+    }
+    .nav{
+        padding: 0px;
+        flex: 100%;
+        z-index: 1;
+    }
+    header{
+        background-color: white;
+    }
+    label{
+        color: grey;
+        display: block;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+    }
+    .menu{
+        text-align: center;
+        display: none;
+    }
+    label i:hover{
+        color: #0074FF;
+    }
+    .icons{
+        display: none;
+    }
+    .menu a{
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 5px 5px;
+        border: 1px solid white;
+        background-color:  #0074FF;
+        color: white;
+    }
+    .menu a:hover{
+        background-color: rgb(118, 178, 252);
+    }
+    #toggle:checked + .menu{
+        display: block;
+    }}
+

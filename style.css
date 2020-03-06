@@ -106,12 +106,11 @@ label{
 }
 .featured{
     display: grid;
-    grid-template-columns: 95% 5%;
+    grid-template-columns: 94% 6%;
 }
 .featured i{
-    padding-top: 1rem;
-    padding-left: 0.7rem;
-    font-size: 1rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
 }
 .featured i:hover{
     color: #0074FF;
@@ -142,7 +141,6 @@ label{
     transition: .5s ease;
     background: rgb(7, 42, 84);
     backface-visibility: hidden;
-    background-color: rgb(243, 242, 242);
 }
 .middle {
     transition: .5s ease;
@@ -280,7 +278,6 @@ label{
 .fourth i:hover{
     color: #0074FF;
     cursor: pointer;
-    transform: scale(1.2);
 }
 .new {
     display: grid;
@@ -381,6 +378,7 @@ label{
 .posts div:hover{
     transform: scale(1.05);
     cursor: pointer;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(226, 226, 226);
 }
 .posts img{
     width: 100%;
@@ -427,7 +425,7 @@ label{
 .brand-icons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 12%;
+    column-gap: 5%;
     padding-bottom: 50px;
 }
 .brand-icons img:hover{
@@ -510,7 +508,6 @@ label{
     color: white;
 }
 
-
   @media only screen and (max-width: 1200px){
     .categories{
         display: grid;
@@ -518,7 +515,46 @@ label{
         column-gap: 20px;
         row-gap: 20px;
     }
-
+    .adidas{
+        grid-area: adidass;
+    }
+    .school-bag{
+        grid-area: bags;
+    }
+    .puma{
+        grid-area: pumas;
+    }
+    .third{
+        grid-template-areas: 'adidass adidass adidass adidass'
+        'bags bags pumas pumas';
+        row-gap: 2rem;
+    }
+     .third h5{
+         padding-bottom: 1rem;
+     }
+   .new{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+   .content i{
+       font-size: 0.8rem;
+   }
+   .nav2{
+       font-size: 0.9rem;
+   }
+   .nav2 i{
+       font-size: 0.9rem;
+   }
+   .featured{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.featured h2{
+    font-size: 1rem;
+}
+.featured i{
+    font-size: 1rem;
+}
   }
 
 @media only screen and (max-width: 850px){
@@ -581,13 +617,73 @@ label{
         column-gap: 20px;
         row-gap: 20px;
     }
+    .third{
+        display: grid;
+        grid-template-areas: 1fr;
+        row-gap: 1rem;
+    }
+    .new{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+.content i{
+    font-size: 0.6rem;
 }
-@media only screen and (max-width: 400px){
+.nav2{
+    font-size: 0.7rem;
+} 
+.menu1 a{
+    padding: 0;
+    padding-right: 0.2rem;
+}
+.nav2 i{
+    padding-right: 0;
+    font-size: 0.6rem;
+}
+.featured{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.featured h2{
+    font-size: 0.9rem;
+}
+.featured i{
+    font-size: 0.8rem;
+}
+.posts{
+    display: block;
+}
+.posts div{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+}
+@media only screen and (max-width: 450px){
     .categories{
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
         row-gap: 20px;
     }
-
+    .third{
+        display: grid;
+        grid-template-areas: 1fr;
+    }
+    .new i{
+        font-size: 0.2rem;
+    }
+    .featured{
+        display: grid;
+        grid-template-columns: 85% 15%;
+    }
+    .featured h2{
+        font-size: 0.6rem;
+    }
+    .featured i{
+        font-size: 0.6rem;
+    }
+    .posts{
+        display: block;
+    }
 }
