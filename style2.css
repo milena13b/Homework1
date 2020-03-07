@@ -85,7 +85,9 @@ label{
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
-
+.footer img{
+    width: 40%;
+}
 .footer h4{
     color: white;
 }
@@ -104,6 +106,7 @@ label{
 }
 .metafooter img{
     padding-top: 1rem;
+    width: 70%;
 }
 .metafooter i:hover{
     color: white;
@@ -119,11 +122,6 @@ label{
 }
 
 .row1:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.row2:after {
     content: "";
     display: table;
     clear: both;
@@ -186,7 +184,7 @@ ul li{
 .second{
     background-color: white;
     box-shadow: 10px 10px 10px grey;
-    width: 30%;
+    width: 32%;
     border: 1px solid grey;
     border-radius: 5px;
     font-size: 20px;
@@ -254,7 +252,7 @@ ul li{
     overflow: hidden;
     background-color: white;
     box-sizing: inherit; 
-    margin-top: 70px;
+    margin-top: 130px;
 }
 #lan{
     background-color: white;
@@ -319,55 +317,6 @@ table{
         display: table;
         clear: both;
     }
-    @media screen and (max-width: 800px){
-        .colona1,
-        .colona2 {
-            width: 100%;
-            overflow: hidden;
-            float: right
-        }
-    label{
-            display: block;
-            cursor: pointer;
-        }
-        #lan{
-            width: 100%;
-        }
-        #rmenu{
-           text-align: center;
-           width: 100%;
-           display: none;
-        }
-        #rmenu a{
-            display: inline-block;
-            border-bottom: 1px solid rgb(7, 34, 68);
-            margin: 0;
-        }
-        #checkbox{
-            display: block;
-        }
-        #checkbox:checked + #rmenu{
-            display: block;
-        }
-    .row1{
-        margin: 5px;
-    }
-    .second{
-        width: 100%;
-       margin-bottom: 45px;
-       overflow: hidden;
-    }
-    #about {
-        overflow: hidden;
-        width: 100%;
-        border: none;
-        box-shadow: none;
-        padding-right: 0px;
-    }
- #image{
-     width: 100%;
-     margin-bottom: 30px;
- }}
     .container{
         font-family: 'Times New Roman', Times, serif;
         font-size: 19px;
@@ -446,8 +395,57 @@ table{
        float: left ;
     }
 
-@media only screen and (max-width: 850px){
-    body{
+
+
+
+    @media screen and (max-width: 850px){
+        .colona1,
+        .colona2 {
+            width: 100%;
+            overflow: hidden;
+            float: right
+        }
+    label{
+            display: block;
+            cursor: pointer;
+        }
+        #lan{
+            width: 100%;
+        }
+        #rmenu{
+           text-align: center;
+           width: 100%;
+           display: none;
+        }
+        #rmenu a{
+            display: inline-block;
+            border-bottom: 1px solid rgb(7, 34, 68);
+            margin: 0;
+        }
+        #checkbox{
+            display: block;
+        }
+        #checkbox:checked + #rmenu{
+            display: block;
+        }
+    .row1{
+        margin: 5px;
+    }
+    .second{
+        width: 100%;
+       margin-bottom: 45px;
+       overflow: hidden;
+    }
+    #about {
+        overflow: hidden;
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding-right: 0px;
+    }
+ #image{
+     width: 100%;
+     margin-bottom: 30px;}body{
         margin: 0;
         padding: 0;
     }
@@ -493,5 +491,31 @@ table{
     }
     #toggle:checked + .menu{
         display: block;
-    }}
-
+    }
+    .footer h4{
+        font-size: 0.99rem;
+    }
+    .row21 p{
+        font-size: 0.7rem;
+    }
+    .row23 p{
+        font-size: 0.7rem;
+    }
+    .row11 p{
+        font-size: 0.7rem;
+    }
+    .row11{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .row23 i{
+        padding: 0 0.5rem;
+    }
+    .metafooter{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .row2{
+        display: block;
+    }
+}

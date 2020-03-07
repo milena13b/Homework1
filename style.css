@@ -105,16 +105,24 @@ label{
     padding-bottom: 10px;
 }
 .featured{
-    display: grid;
-    grid-template-columns: 94% 6%;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.featured h3{
+    float: left;
+    width: 97%;
 }
 .featured i{
-    padding-left: 1rem;
+    color: black;
+    padding: 0px 10px;
+    float: left;
+    text-align: right;
     font-size: 1.2rem;
 }
 .featured i:hover{
     color: #0074FF;
-    cursor: pointer;
+    cursor: pointer; 
     transform: scale(1.2);
 }
 .categories{
@@ -442,6 +450,7 @@ label{
 }
 .subscribe p{
     color: silver;
+    font-size: 1rem;
 }
 .subscribe #sub{
     border: none;
@@ -449,8 +458,8 @@ label{
     width: 20%;
     background-color: transparent;
     font-size: 1.1rem;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
     color: silver;
     text-align: left;
 }
@@ -458,7 +467,8 @@ label{
      color: white;
      background-color: #0074FF;
      border: none;
-     padding: 12px 25px;
+     padding: 1rem 1.1rem;
+     font-size: 1rem;
 }
 #submit:hover{
     opacity: 0.6;
@@ -484,7 +494,9 @@ label{
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
-
+.footer img{
+    width: 40%;
+}
 .footer h4{
     color: white;
 }
@@ -503,6 +515,7 @@ label{
 }
 .metafooter img{
     padding-top: 1rem;
+    width: 70%;
 }
 .metafooter i:hover{
     color: white;
@@ -545,16 +558,18 @@ label{
    .nav2 i{
        font-size: 0.9rem;
    }
-   .featured{
-    display: grid;
-    grid-template-columns: 90% 10%;
-}
-.featured h2{
-    font-size: 1rem;
-}
-.featured i{
-    font-size: 1rem;
-}
+   .subscribe p{
+       font-size: 1rem;
+   }
+   .subscribe h2{
+       font-size: 1.2rem;
+   }
+   #sub{
+       font-size: 0.8rem;
+   }
+   #submit{
+       font-size: 0.8rem;
+   }
   }
 
 @media only screen and (max-width: 850px){
@@ -640,22 +655,51 @@ label{
     padding-right: 0;
     font-size: 0.6rem;
 }
-.featured{
-    display: grid;
-    grid-template-columns: 90% 10%;
-}
-.featured h2{
-    font-size: 0.9rem;
-}
-.featured i{
-    font-size: 0.8rem;
-}
 .posts{
     display: block;
 }
 .posts div{
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+.footer h4{
+    font-size: 0.8rem;
+}
+.row21 p{
+    font-size: 0.5rem;
+}
+.row23 p{
+    font-size: 0.5rem;
+}
+.row1 p{
+    font-size: 0.5rem;
+}
+.row1{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.row23 i{
+    padding: 0 0.5rem;
+}
+.metafooter{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.brand-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.subscribe p{
+    font-size: 0.9rem;
+}
+.subscribe h2{
+    font-size: 1rem;
+}
+.subscribe input{
+    font-size: 0.5rem;
+}
+#submit{
+    font-size: 0.7rem;
 }
 
 }
@@ -667,23 +711,57 @@ label{
         row-gap: 20px;
     }
     .third{
-        display: grid;
-        grid-template-areas: 1fr;
+        display: block;
+    }
+    .adidas h2{
+        font-size: 0.99rem;
+    }
+    .adidas a{
+        font-size: 0.5rem;
     }
     .new i{
         font-size: 0.2rem;
     }
-    .featured{
-        display: grid;
-        grid-template-columns: 85% 15%;
-    }
-    .featured h2{
-        font-size: 0.6rem;
-    }
-    .featured i{
-        font-size: 0.6rem;
-    }
     .posts{
         display: block;
+    }
+    .title h3{
+       font-size: 0.9rem;
+    }
+    .title i{
+        font-size: 0.9rem;
+    }
+    .brands h3{
+        font-size: 0.9rem;
+     }
+     .brands i{
+         font-size: 0.9rem;
+     }
+    .menu1{
+        width: 100%;
+        font-size: 0.6rem;
+    }
+    .row23 i{
+        padding: 0 0.2rem;
+        font-size: 0.5rem;
+    }
+    .nav2 i{
+        display: none;
+    }
+    .featured i{
+        font-size: 0.9rem;
+    }
+    .subscribe p{
+        font-size: 0.8rem;
+    }
+    .subscribe h2{
+        font-size: 0.9rem;
+    }
+    .subscribe input{
+        font-size: 0.5rem;
+    }
+    #submit{
+        font-size: 0.6rem;
+        padding: 0.4rem 0.5rem;
     }
 }

@@ -196,9 +196,37 @@ a span:nth-child(4) {
     transition-delay: 0.6s;
 }
 
-
-
-
+    body{
+        background-color: white;
+        padding: 10px 10px;
+    }
+.header2{
+    padding-top: 10px;
+    height: 150px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    font-size: 2rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row img{
+    padding-bottom: 1rem;
+}
+.col{
+    max-width: 25%;
+    height: auto;
+    flex:25%;
+    padding-left:  1rem;
+    padding-bottom: 1rem;
+}
+.row img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
 @media only screen and (max-width: 850px){
     body{
@@ -247,47 +275,40 @@ a span:nth-child(4) {
     }
     #toggle:checked + .menu{
         display: block;
-    }}
-    body{
-        background-color: white;
-        padding: 10px 10px;
     }
-.header2{
-    padding-top: 10px;
-    height: 150px;
-    text-align: center;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 3px;
-    font-size: 2rem;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.row img{
-    padding-bottom: 1rem;
-}
-.col{
-    max-width: 25%;
-    height: auto;
-    flex:25%;
-    padding-left:  1rem;
-    padding-bottom: 1rem;
-}
-.row img:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-}
-@media only screen and (max-width: 900px) {
+
+
+
+    .footer h4{
+        font-size: 0.99rem;
+    }
+    .row21 p{
+        font-size: 0.7rem;
+    }
+    .row23 p{
+        font-size: 0.7rem;
+    }
+    .row11 p{
+        font-size: 0.7rem;
+    }
+    .row11{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .row23 i{
+        padding: 0 0.5rem;
+    }
+    .metafooter{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .col{
        flex: 50%;
        max-width: 50%;
     }
     img{
     margin-bottom: 10px;
-}
-}
+}}
 @media only screen and (max-width: 500px){
     .col{
         flex: 100%;
@@ -298,5 +319,28 @@ a span:nth-child(4) {
     }
     img{
     margin-top: 20px;
+}
+.footer h4{
+    font-size: 0.9rem;
+}
+.row21 p{
+    font-size: 0.6rem;
+}
+.row23 p{
+    font-size: 0.6rem;
+}
+.row11 p{
+    font-size: 0.6rem;
+}
+.row11{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.row23 i{
+    padding: 0 0.1rem;
+}
+.metafooter{
+    padding-left: 5%;
+    padding-right: 5%;
 }
 }
